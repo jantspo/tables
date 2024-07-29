@@ -1,3 +1,22 @@
+# General Info
+This project was created using create act app for basic boilerplate.
+
+Assuming a user has node and npm already set up on their machine, `npm install` and `npm start` should be all that is necessary to run the application.
+Test can be run with `npm run test`
+
+Some assumptions were made regarding setup of the components:
+1. The table would be receiving data from a stable source with it's own error handling so an api call "mock' would not be necessary
+2. Some assets and stylings present on the mockup would be provided in a real world scenario and could be bypassed for this exercise
+   namely the download icon anf specifcally stylings like font and font size, margins, paddings, etc. Styling was meant to be a close
+   approximation based on the mockup.
+3. Unit tests for the individual components were somewhat unneeded for the sake of time and in favor of more holistic test coverage of
+   of the app's behavior. This also falls in line with React-testing-library's pattern of writing tests based on user interactions and
+   visible ui changes over testing specific bits of code. Some logic in `TableWrapper` could (and should) likely be moved into a service or helper file re-usability and actual business logic unit tests.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
